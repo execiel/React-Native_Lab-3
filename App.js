@@ -1,20 +1,28 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StatusBar } from "expo-status-bar";
+import { Text, View } from "react-native";
+import { mainStyle } from "./MainStyle";
+import { PlacesButton } from "./components/PlacesButton";
+import { Label } from "./components/CustomText";
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
+    <View style={mainStyle.container}>
+      <View style="placesNav">
+        <Label text="Rooms" type="header" />
+        <View style={{ display: "flex", flexDirection: "row" }}>
+          <PlacesButton
+            name="Living Room"
+            source={require("./assets/living-room.png")}
+          />
+          <PlacesButton name="Bedroom" source={require("./assets/bed.png")} />
+          <PlacesButton
+            name="Kitchen"
+            source={require("./assets/kitchen.png")}
+          />
+        </View>
+      </View>
+
+      <StatusBar style="light" />
     </View>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});

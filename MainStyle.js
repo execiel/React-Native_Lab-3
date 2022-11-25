@@ -1,10 +1,10 @@
 import { StyleSheet } from "react-native";
 
 const colors = {
-  bg: "#303E40",
-  bgAlt: "#242F30",
+  bg: "#263238",
+  bgAlt: "#262938",
   fg: "#fafafa",
-  buttonBg: "#9BE0CA",
+  buttonBg: "#86CFFC",
   buttonFg: "#000000",
 };
 
@@ -18,17 +18,21 @@ const mainStyle = StyleSheet.create({
   text: {
     color: colors.fg,
     fontSize: 16,
+    margin: 5,
   },
   header: {
     color: colors.fg,
     fontWeight: "bold",
-    fontSize: 20,
+    fontSize: 22,
+    marginTop: 15,
+    marginBottom: 15,
   },
-  placesNav: {
-    flex: 1,
-    flexDirection: "row",
-    alignItems: "center",
+  innerContainer: {
+    flexDirection: "column",
     justifyContent: "center",
+    width: "100%",
+    paddingLeft: 25,
+    paddingRight: 25,
   },
 });
 

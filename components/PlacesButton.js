@@ -18,14 +18,14 @@ const styles = StyleSheet.create({
     flexDirection: "column",
     alignItems: "center",
     justifyContent: "space-between",
-    width: 90,
-    height: 90,
+    width: 95,
+    height: 95,
     padding: 10,
     borderRadius: 10,
   },
   image: {
-    width: 60,
-    height: 60,
+    width: 70,
+    height: 70,
   },
   text: {
     color: colors.buttonFg,
